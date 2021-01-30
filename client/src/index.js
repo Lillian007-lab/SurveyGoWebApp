@@ -25,5 +25,5 @@ ReactDOM.render(
   document.querySelector("#root")
 );
 
-console.log("STRIPE KEY is ", process.env.STRIPE_PUBLISHABLE_KEY);
+console.log("STRIPE KEY is ", process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 console.log("Environment is ", process.env.NODE_ENV);
