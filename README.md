@@ -1063,3 +1063,33 @@ when you make post requests to use Express Server, Express does not by default p
 
 <img src="README/image-20210129011321257.png" alt="image-20210129011321257" style="zoom: 80%;" /> 
 
+
+
+# Back End to Front End Routing in Production
+
+## Express with Create-React-App & Routing in Production
+
+![image-20210130134810944](README/image-20210130134810944.png) 
+
+generate production build
+
+![image-20210130140259858](README/image-20210130140259858.png) 
+
+In Prod Mode, Express Server need to recognize that there are some routes that it is responsible for; some routes need to send to index.html (React Routes); and some routes that are trying to access specific assets like the main.js file
+
+![image-20210130132923267](README/image-20210130132923267.png) 
+
+![image-20210130143040853](README/image-20210130143040853.png) 
+
+## Deployment Options
+
+We are taking option #2 
+
+![image-20210130143104323](README/image-20210130143104323.png) 
+
+https://devcenter.heroku.com/articles/nodejs-support 
+
+![image-20210130144722050](README/image-20210130144722050.png)  
+
+![image-20210130145842030](README/image-20210130145842030.png) 
+
