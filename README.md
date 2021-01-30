@@ -1089,7 +1089,7 @@ We are taking option #2
 
 https://devcenter.heroku.com/articles/nodejs-support 
 
-![image-20210130144722050](README/image-20210130144722050.png)  
+<img src="README/image-20210130144722050.png" alt="image-20210130144722050" style="zoom:67%;" />   <img src="README/image-20210130163214225.png" alt="image-20210130163214225" style="zoom:67%;" /> 
 
 ![image-20210130145842030](README/image-20210130145842030.png) 
 
