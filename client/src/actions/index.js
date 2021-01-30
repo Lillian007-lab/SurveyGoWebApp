@@ -15,3 +15,9 @@ export const fetchUser = () => async (dispatch) => {
   const user = res.data;
   dispatch(fetchUserSuccess(user));
 };
+
+export const handleToken = (token) => async (dispatch) => {
+  const res = await axios.post("/api/stripe", token);
+  const user = res.data;
+  dispatch(fetchUserSuccess(user));
+};

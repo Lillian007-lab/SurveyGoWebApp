@@ -953,17 +953,17 @@ Use **Stripe** to take care of payment processor
 
 <img src="README/image-20210125225208497.png" alt="image-20210125225208497" style="zoom:80%;" /> 
 
-## Exploring Stripe API
+## Front-end
 
-sign up Stripe
+### sign up Stripe
 
 ![image-20210126020324975](README/image-20210126020324975.png) 
 
-install react-stripe-checkout
+### install front-end module to handle stripe, react-stripe-checkout
 
 ![image-20210125234555375](README/image-20210125234555375.png) 
 
-Setup API Keys
+### Setup API Keys
 
 - Back End
 
@@ -980,4 +980,86 @@ https://create-react-app.dev/docs/adding-custom-environment-variables/
 Under /client folder, create .env.development and .env.production files, and add both STRIPE publishable key
 
 ![image-20210126002810956](README/image-20210126002810956.png) 
+
+### Payments Component
+
+![image-20210128000013426](README/image-20210128000013426.png) 
+
+![image-20210128001347341](README/image-20210128001347341.png) 
+
+<img src="README/image-20210128000112210.png" alt="image-20210128000112210" style="zoom:67%;" /> 
+
+id (token) is representing pending charge in memory. card info contains only last four digits
+
+<img src="README/image-20210128000609196.png" alt="image-20210128000609196" style="zoom: 80%;" /> 
+
+Adding more info in StripeCheckout and some styling 
+
+![image-20210128001453585](README/image-20210128001453585.png) 
+
+<img src="README/image-20210128001542831.png" alt="image-20210128001542831" style="zoom:67%;" /> 
+
+![image-20210128001856122](README/image-20210128001856122.png) 
+
+### Add actions to handleToken
+
+![image-20210128003113016](README/image-20210128003113016.png) 
+
+### Add connect to Payments and map dispatch to props
+
+![image-20210128012349795](README/image-20210128012349795.png) 
+
+## Back-end
+
+### install back-end module to handle stripe, stripe
+
+https://www.npmjs.com/package/stripe 
+
+https://stripe.com/docs/api/charges/create 
+
+![image-20210128004114829](README/image-20210128004114829.png) 
+
+### install middleware body-parser
+
+https://www.npmjs.com/package/body-parser
+
+when you make post requests to use Express Server, Express does not by default parse the request payload. This is a middleware to parse it and make it available anywhere in the application. Parse incoming request bodies in a middleware before your handlers, available under the `req.body` property.
+
+![image-20210128010235336](README/image-20210128010235336.png) 
+
+### Add billingRountes for post request handler in back-end
+
+![image-20210128012717129](README/image-20210128012717129.png) 
+
+![image-20210128011649744](README/image-20210128011649744.png) 
+
+![image-20210128012657255](README/image-20210128012657255.png) 
+
+### Create a Charge Object
+
+![image-20210128233709084](README/image-20210128233709084.png) 
+
+### Adding credits to a User
+
+![image-20210128231247291](README/image-20210128231247291.png) 
+
+![image-20210128231507317](README/image-20210128231507317.png)  ![image-20210128233440163](README/image-20210128233440163.png) 
+
+![image-20210129001833315](README/image-20210129001833315.png) 
+
+
+
+### Add Route-Specific Middleware to make sure users are logged in
+
+![image-20210129002000490](README/image-20210129002000490.png) 
+
+![image-20210129010405406](README/image-20210129010405406.png) 
+
+![image-20210129010701341](README/image-20210129010701341.png) 
+
+## Display Credits
+
+![image-20210129011307893](README/image-20210129011307893.png) 
+
+<img src="README/image-20210129011321257.png" alt="image-20210129011321257" style="zoom: 80%;" /> 
 

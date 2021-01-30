@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 const keys = require("./config/keys");
 const cookieSeesion = require("cookie-session");
 const passport = require("passport");
+const bodyParser = require("body-parser");
 
 require("./models/User"); // as passport is using model users, we need to make sure models is executed before the next line
 require("./services/passport");
@@ -18,6 +19,7 @@ mongoose.connect(keys.mongoURI, {
 
 const app = express();
 
+app.use(bodyParser.json());
 app.use(
   cookieSeesion({
     maxAge: 30 * 24 * 60 * 60 * 1000, // one month
@@ -28,6 +30,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 require("./routes/authRoutes")(app);
+require("./routes/billingRoutes")(app);
 // or we can separate it into the following:
 // const authRouts = require('./routes/authRoutes');
 // authRouts(app);
