@@ -1093,3 +1093,120 @@ https://devcenter.heroku.com/articles/nodejs-support
 
 ![image-20210130145842030](README/image-20210130145842030.png) 
 
+![image-20210131160808620](README/image-20210131160808620.png) ![image-20210131160829463](README/image-20210131160829463.png) 
+
+# Mongoose for Survey Creation
+
+## Overview Structure
+
+<img src="README/image-20210131160856886.png" alt="image-20210131160856886" style="zoom:80%;" /> <img src="README/image-20210131161102361.png" alt="image-20210131161102361" style="zoom:80%;" /> 
+
+Server Routes
+
+<img src="README/image-20210131161801584.png" alt="image-20210131161801584" style="zoom:80%;" /> 
+
+## Survey DB Model
+
+<img src="README/image-20210131162228350.png" alt="image-20210131162228350" style="zoom: 67%;" /> 
+
+<img src="README/image-20210131163627978.png" alt="image-20210131163627978" style="zoom:80%;" />  =>  <img src="README/image-20210131163649933.png" alt="image-20210131163649933" style="zoom:80%;" /> => 
+
+
+
+<img src="README/image-20210131162930810.png" alt="image-20210131162930810" style="zoom:80%;" /> 
+
+<img src="README/image-20210131163952248.png" alt="image-20210131163952248" style="zoom:80%;" />  
+
+<img src="README/image-20210131164137866.png" alt="image-20210131164137866" style="zoom:80%;" /> 
+
+We are not using the structure below, because of the physical limited Mongo Size for a single record. In the structure below, approximately we can only have 200k recipients in total for each User, while the structure above allows each user to have multiple survey (each survey has limitation of 200K recipients)
+
+<img src="README/image-20210131164122209.png" alt="image-20210131164122209" style="zoom:80%;" />  <img src="README/image-20210131164337042.png" alt="image-20210131164337042" style="zoom: 67%;" /> 
+
+![image-20210131172631340](README/image-20210131172631340.png) 
+
+![image-20210131172646680](README/image-20210131172646680.png) 
+
+![image-20210131172708321](README/image-20210131172708321.png) 
+
+## Survey Creation Route
+
+<img src="README/image-20210131201935379.png" alt="image-20210131201935379" style="zoom:80%;" /> <img src="README/image-20210131202012248.png" alt="image-20210131202012248" style="zoom:80%;" /> 
+
+<img src="README/image-20210131202645724.png" alt="image-20210131202645724" style="zoom:80%;" /> <img src="README/image-20210131202742733.png" alt="image-20210131202742733" style="zoom:80%;" /> 
+
+<img src="README/image-20210131202939743.png" alt="image-20210131202939743" style="zoom:80%;" />  =》  <img src="README/image-20210131203031595.png" alt="image-20210131203031595" style="zoom:80%;" /> 
+
+<img src="README/image-20210131203333484.png" alt="image-20210131203333484" style="zoom:80%;" /> 
+
+![image-20210131231409452](README/image-20210131231409452.png) 
+
+![image-20210131231357132](README/image-20210131231357132.png) 
+
+![image-20210201011028452](README/image-20210201011028452.png) 
+
+## SendGrid
+
+A **webhook** in [web development](https://en.wikipedia.org/wiki/Web_development) is a method of augmenting or altering the behavior of a [web page](https://en.wikipedia.org/wiki/Web_page) or [web application](https://en.wikipedia.org/wiki/Web_application) with custom [callbacks](https://en.wikipedia.org/wiki/Callback_(computer_programming)). These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating website or application.
+
+<img src="README/image-20210131203603993.png" alt="image-20210131203603993" style="zoom: 67%;" />  =》<img src="README/image-20210131204420858.png" alt="image-20210131204420858" style="zoom:80%;" /> 
+
+Register SendGrid
+
+Add API key to both dev.js and Heroku
+
+![image-20210131231957603](README/image-20210131231957603.png)  ![image-20210131231805050](README/image-20210131231805050.png)  
+
+<img src="README/image-20210131231837441.png" alt="image-20210131231837441" style="zoom: 67%;" /> 
+
+install module
+
+![image-20210131232418861](README/image-20210131232418861.png) 
+
+## Mailer and Templates setup
+
+<img src="README/image-20210131202742733.png" alt="image-20210131202742733" style="zoom: 67%;" />  <img src="README/image-20210131233710361.png" alt="image-20210131233710361" style="zoom: 80%;" />  <img src="README/image-20210131235032439.png" alt="image-20210131235032439" style="zoom: 67%;" /> 
+
+
+
+![image-20210201013757321](README/image-20210201013757321.png) 
+
+![image-20210201014011801](README/image-20210201014011801.png) 
+
+![image-20210201013850764](README/image-20210201013850764.png) 
+
+Test:
+
+![image-20210201015019323](README/image-20210201015019323.png) 
+
+<img src="README/image-20210201014853643.png" alt="image-20210201014853643"  />  <img src="README/image-20210201014906370.png" alt="image-20210201014906370" style="zoom:80%;" /> 
+
+
+
+ ## Polish Route Handler
+
+![image-20210201015243733](README/image-20210201015243733.png)  
+
+![image-20210201220236348](README/image-20210201220236348.png) 
+
+Add redirectDomain in prod.js, dev.js and heroku config vars
+
+![image-20210201220419831](README/image-20210201220419831.png) 
+
+![image-20210201220317189](README/image-20210201220317189.png) 
+
+<img src="README/image-20210201220719656.png" alt="image-20210201220719656" style="zoom:50%;" /> 
+
+<img src="README/image-20210201220735205.png" alt="image-20210201220735205" style="zoom:50%;" />   
+
+<img src="README/image-20210201221534229.png" alt="image-20210201221534229" style="zoom:80%;" /> 
+
+<img src="README/image-20210201221056287.png" alt="image-20210201221056287" style="zoom: 80%;" /> 
+
+# Back to the Client
+
+<img src="README/image-20210201225917437.png" alt="image-20210201225917437" style="zoom:67%;" /> <img src="README/image-20210201225853701.png" alt="image-20210201225853701" style="zoom: 80%;" /> 
+
+
+
+ 

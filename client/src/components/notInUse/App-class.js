@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import { connect } from "react-redux";
-// react-redux library is all about compatibility between react and redux libraries
-import * as actions from "../actions";
+// react-redux library is all about compatibility between react
+// and redux libraries
+import * as actions from "../../actions";
 // import all different action creators from our actions/index.js
 
 // on the fron end, we are making use of Web pack
@@ -12,8 +13,8 @@ import * as actions from "../actions";
 // which support common JS modules.
 // that's why we use "require" there
 
-import Header from "./Header";
-import Landing from "./Landing";
+import Header from "../Header";
+import Landing from "../Landing";
 
 const Dashboard = () => <h2>Dashboard</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;

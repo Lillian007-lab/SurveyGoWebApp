@@ -9,6 +9,10 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import App from "./components/App";
 import allReducers from "./reducers";
 
+// Development only axios helpers!
+import axios from "axios";
+window.axios = axios;
+
 const initialState = {};
 
 const store = createStore(

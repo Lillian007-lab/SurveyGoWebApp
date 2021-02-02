@@ -10,6 +10,7 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 
 require("./models/User"); // as passport is using model users, we need to make sure models is executed before the next line
+require("./models/Survey");
 require("./services/passport");
 
 mongoose.connect(keys.mongoURI, {
@@ -31,6 +32,7 @@ app.use(passport.session());
 
 require("./routes/authRoutes")(app);
 require("./routes/billingRoutes")(app);
+require("./routes/surveyRoutes")(app);
 // or we can separate it into the following:
 // const authRouts = require('./routes/authRoutes');
 // authRouts(app);
