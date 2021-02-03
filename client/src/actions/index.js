@@ -10,8 +10,8 @@ export const fetchUserSuccess = (user) => {
 
 export const fetchUser = () => async (dispatch) => {
   const res = await axios.get("/api/current_user");
-  console.log("fetching user");
-  console.log(res.data);
+  // console.log("fetching user");
+  // console.log(res.data);
   const user = res.data;
   dispatch(fetchUserSuccess(user));
 };

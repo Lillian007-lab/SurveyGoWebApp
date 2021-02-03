@@ -6,7 +6,7 @@
 
   
 
-# **Express + Server Side Architecture**
+# **Express + Server Side Architecture**:cake: 
 
 ## Initialize package and install express
 
@@ -137,7 +137,7 @@ With nodemon, there is no need to restart (node index.js) the app every time whe
 
 ![img](https://lh5.googleusercontent.com/wADyuo95OojsdzurgzIykUSCkNkL869im5YH6nJo7luJX9Bp-YALXJO6sljq3nyMjyoDtMm1HrRuDJ0BXjM_zrUTPckZWtPZBFD9fGZn6fDNibteiH61io0-a3p7VtafMHXvVQ8Q) 
 
-# **Authentication Theory and Signing in User with OAuth**
+#  **Authentication Theory and Signing in User with OAuth**:octopus:
 
 <img src="https://lh3.googleusercontent.com/Ryospzp_V_yCty8b1CjldoGKHNVIZdoA_319_h1ktXvE9RuYjYHWAMBSuDeDNArWPkIftFugLxSpW8dYHlpNCsl3hBy3w_-Fr-G3spv0xxN9AfFXqik-y3Am9GC3aT7kVkILNqkI" alt="img" style="zoom:80%;" /> 
 
@@ -224,7 +224,7 @@ OAuth: cookie/**token**? based authentication 验证 (Authorization 授权)
   
   ![img](https://lh3.googleusercontent.com/nuTfHlJ8YL3SYhIjslpsEJqcIqZIIZAqeGMDe4NP3jhMKZQqHJpCt_4Z-0bZRFUkt_cQvcoUal-YdBnzjIoboWSX_jPqK9ThXmniZZgdvTyYtCR8Am7Ozw94SuscLd15KduZsn_J) 
 
-# **Mongoose + Mongo DB**
+# **Mongoose + Mongo DB**:mushroom: 
 
 <img src="https://lh6.googleusercontent.com/ZzK_vp0Hq-eG9UuDQkok0-hHlWqj4TY0CZVH90uAoLzP9I_7OBTyvKz2tTFoepVAv7ZdboTdcktMiE5UieBHTLhq072-U0vdoTCeFC9Q1GMdD46__DKOj1-705xY76isVtS_boC7" alt="img" style="zoom:80%;" />      ![img](https://lh3.googleusercontent.com/kiOspAzQaGY-eT09AKGuaH7DTtMHqWkpAL8VWy_ZJmTZBAnSlRf8VDWc1w5hM7PhlyrYF4n39AhD6BXGizekNZf9dC_JKcXDyD4q1TiZf7L88sbLJaMRcGreEFC4cwl6jx9sFwrg) 
 
@@ -436,7 +436,7 @@ Logout： http://localhost:5000/api/logout
 
 
 
-# Dev vs Prod Environments (Heroku)
+# Dev vs Prod Environments (Heroku):tiger:
 
 Dev and Prod have different set of Keys
 
@@ -627,7 +627,7 @@ proxy changes domain of these requests to http://localhost:5000/
 
  
 
-# Developing the Client Side
+# Developing the Client Side:heart:
 
 ## promise
 
@@ -932,7 +932,7 @@ Header.js
 
 
 
-# Handling Payments
+# Handling Payments:pig:
 
 ## Construture
 
@@ -1065,7 +1065,7 @@ when you make post requests to use Express Server, Express does not by default p
 
 
 
-# Back End to Front End Routing in Production
+# Back End to Front End Routing in Production:rose:
 
 ## Express with Create-React-App & Routing in Production
 
@@ -1095,7 +1095,7 @@ https://devcenter.heroku.com/articles/nodejs-support
 
 ![image-20210131160808620](README/image-20210131160808620.png) ![image-20210131160829463](README/image-20210131160829463.png) 
 
-# Mongoose for Survey Creation
+# Mongoose for Survey Creation:phone: 
 
 ## Overview Structure
 
@@ -1203,10 +1203,102 @@ Add redirectDomain in prod.js, dev.js and heroku config vars
 
 <img src="README/image-20210201221056287.png" alt="image-20210201221056287" style="zoom: 80%;" /> 
 
-# Back to the Client
+# Back to the Client:meat_on_bone: 
+
+## Dashboard component
 
 <img src="README/image-20210201225917437.png" alt="image-20210201225917437" style="zoom:67%;" /> <img src="README/image-20210201225853701.png" alt="image-20210201225853701" style="zoom: 80%;" /> 
 
 
 
+<img src="README/image-20210202003059214.png" alt="image-20210202003059214" style="zoom: 80%;" /> 
+
+![image-20210202003234215](README/image-20210202003234215.png) 
+
+- Anchor tag or Link tag from React Router:
+
+https://markadamfoster.com/react-anchor-tags-vs-link-components/ 
+
+- Create Dashboard component with material-css
+
+![image-20210202003610061](README/image-20210202003610061.png) 
+
+![image-20210202003649880](README/image-20210202003649880.png) 
+
+![image-20210202211752117](README/image-20210202211752117.png) 
+
+
+
+<img src="README/image-20210202220356190.png" alt="image-20210202220356190" style="zoom: 67%;" /> => <img src="README/image-20210202220535072.png" alt="image-20210202220535072" style="zoom: 67%;" /> 
+
+
+
+## Purpose of Redux Form
+
+### Structure: 
+
+<img src="README/image-20210202003707362.png" alt="image-20210202003707362" style="zoom:80%;" /> 
+
+If use Redux, a lot of action and reducer need to be handled
+
+<img src="README/image-20210202003825828.png" alt="image-20210202003825828" style="zoom:80%;" />  
+
+Using Redux Form, formReducer is managed entirely by ReduxForm
+
+<img src="README/image-20210202004024670.png" alt="image-20210202004024670" style="zoom:80%;" /> 
+
+### Install Redux Form
+
+![image-20210202211519026](README/image-20210202211519026.png) 
+
+
+
+### Apply reducer of reduxForm
+
+![image-20210202215346410](README/image-20210202215346410.png) 
+
+### Add SurveyNew and SurveyForm components
+
+![image-20210202215856335](README/image-20210202215856335.png) 
+
+![image-20210202221227244](README/image-20210202221227244.png) 
+
+
+
+```` javascript
+reduxForm({
+    form: "a unique name for the form"
+})
+// To make your form component communicate with the store, we need to wrap it with reduxForm(). It will provide the props about the form state and function to handle the submit process. e.x. handleSubmit(...)
+````
+
+
+
+![image-20210202220900076](README/image-20210202220900076.png) 
+
+
+
+See the logged values blow: key is the Field name, value is the input
+
+![image-20210202220740034](README/image-20210202220740034.png) 
+
+
+
+### Add SurveyField component and styling
+
+
+
+![image-20210202233848541](README/image-20210202233848541.png) 
+
+
+
+![image-20210203005458442](README/image-20210203005458442.png) 
+
+
+
+![image-20210203004858171](README/image-20210203004858171.png) 
+
+
+
  
+

@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import Payments from "./Payments";
 
 const Header = (props) => {
-  console.log("props from Header");
-  console.log(props);
+  // console.log("props from Header");
+  // console.log(props);
   const renderRightUpperCorner = () => {
     switch (props.auth1) {
       case null:
