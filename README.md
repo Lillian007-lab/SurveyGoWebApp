@@ -8,7 +8,7 @@
 
 # **Express + Server Side Architecture**:cake: 
 
-## Initialize package and install express
+## Initialize package and install :rocket:express :rocket:
 
 - **Node.js** is an open-source, cross-platform, back-end, JavaScript runtime environment that executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. 
 - **npm**: is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry. 
@@ -52,7 +52,9 @@ Response from localhost:5000
 
 <img src="README/image-20210110200435540.png" alt="image-20210110200435540" style="zoom:80%;" /> 
 
-index.js
+## Port setup
+
+index.js: dynamic port or default 5000
 
 ````javascript
 const express = require('express');
@@ -77,6 +79,8 @@ app.listen(PORT);
 // route: localhost:5000
 ````
 
+## :rocket:Heroku:rocket: deployment
+
 <img src="https://lh5.googleusercontent.com/hiwMNYiIBZIpjCedyl4fSKAS-T5nDIitIQ7bnWUqlEsD0dzIvjDTD6lShyoEEIkmT2GflKcELObRiBvzO7r1cou0nIJC2QwMhtpra9BS4feZubLE66fej7ieBLPRvcn479vppQ0B" alt="img" style="zoom:80%;" /> 
 
 ![image-20210126003413777](README/image-20210126003413777.png) 
@@ -95,15 +99,17 @@ app.listen(PORT);
 
 <img src="https://lh6.googleusercontent.com/iXpoUsOkcbb7J-LGgIRhyS7NIZazChbTcqHQ5OrbjLi-HeILdk776ToIUrigkg22aAMqbsZAuQXfOoeb7zvrFtdYwtkbDcdr29GMg1s0BOfcRar7Ec9zbYyn1_8V3LM_emJWePgM" alt="img" style="zoom:80%;" /> 
 
+## ​Google OAuth​​ register
+
 Google Project Setup and OAuth Register:https://console.cloud.google.com/cloud-resource-manager?pli=1
 
 Google OAuth client created:
 
 Client ID & Client Secret
 
-## Securing API Keys (the client secret)
+## Install :rocket:Passport:rocket: and Passport-google-oath20 Securing API Keys (the client secret)
 
-![img](https://lh6.googleusercontent.com/Lc4wMof-PBAiPSmV5vj8j0ng4Pr1UNpFRcby8Cz3HuZSt4P3TL97vvV5XM0OQFHNXzULxTMpdMX081XW9Kzz7Z3Z0nb_IO7ulsLZJ-UAPn4_tR-l7XeNK4v9H6yHWwh5VtmMk06Z) 
+<img src="https://lh6.googleusercontent.com/Lc4wMof-PBAiPSmV5vj8j0ng4Pr1UNpFRcby8Cz3HuZSt4P3TL97vvV5XM0OQFHNXzULxTMpdMX081XW9Kzz7Z3Z0nb_IO7ulsLZJ-UAPn4_tR-l7XeNK4v9H6yHWwh5VtmMk06Z" alt="img" style="zoom:80%;" /> 
 
 Install passport and passport-google-oauth20
 
@@ -122,6 +128,8 @@ Within keys.js, store your google client ID and secret. Make sure the file is ad
 ![img](https://lh4.googleusercontent.com/YELW2TK7yMUNxe8ZkcyCan9unGGfAoGslkDJbTCprmWz9RbmvDk7SuJ2UGxKydY7Mm4yYWO5RqVlRfa5rS_TQ13xaqd21zfAyh9T9-NoahES6hlj-fhrbwsH6czw7ao65momFv1-) 
 
 # **Nodemon Setup**
+
+## Install and run :rocket:Nodemon:rocket:
 
 With nodemon, there is no need to restart (node index.js) the app every time when changes are made. Instead of “node index.js”, we can set off “npm run dev” and if any change is added, server will be restarted automatically.
 
@@ -230,7 +238,7 @@ OAuth: cookie/**token**? based authentication 验证 (Authorization 授权)
 
 ![img](https://lh3.googleusercontent.com/tSNftQdQ0LqIsjpDnXmrTKp5B5e-vU8UAcKGwJ59OVWklvzwhtoYb9RM3VcpFfJaClptQcrtKoVuBbZOcuapDBnf15l8dshZdr67zCG_ZQdQAGq7On-FWendZiTgED94ebJfjLzN) 
 
-## Setup and Config MongoDB Atlas Cluster
+## Setup and Config :rocket:MongoDB Atlas:rocket: Cluster
 
 MongoDB Atlas is the global cloud database service for modern applications.
 Deploy fully managed MongoDB across AWS, Google Cloud, and Azure with best-in-class automation and proven practices that guarantee availability, scalability, and compliance with the most demanding data security and privacy standards.
@@ -239,7 +247,7 @@ https://www.mongodb.com/cloud/atlas
 
 Create cluster , DB user
 
-## Install Mongoose
+## Install :rocket:Mongoose:rocket:
 
 ![img](https://lh6.googleusercontent.com/nVb5KGG67Yqpi8kMfTEz4y2SqZ6z4o41oxxM-XoxgJncrEORF3BZRZJMVVuraZxInXIigeVI5BU67ujNkea80YoGfkM0-UjYqQ48C2DZwud-5IvL8KsR3uWGEgei0tGsUw2AR140) 
 
@@ -366,13 +374,13 @@ serialize and deserialize Mongo DB ID, rather than profile id
 
 ![image-20210110201552080](README/image-20210110201552080.png)  
 
- ![image-20210110201603036](README/image-20210110201603036.png)  
+ <img src="README/image-20210110201603036.png" alt="image-20210110201603036" style="zoom:80%;" />  
 
 ![image-20210110201617977](README/image-20210110201617977.png) 
 
 # cookie-session + Enable Cookie
 
-## Use cookie-session
+## Use :rocket:cookie-session:rocket:
 
 ````bash
 npm install --save cookie-seesion
@@ -394,11 +402,13 @@ if response just send the request session, you will find the session context, wh
 
 ![image-20210126214011948](README/image-20210126214011948.png) 
 
-![image-20210126214041165](README/image-20210126214041165.png) 
+<img src="README/image-20210126214041165.png" alt="image-20210126214041165" style="zoom:80%;" /> 
 
 ## Cookie-session v.s. Express-session
 
-<img src="README/image-20210110201810035.png" alt="image-20210110201810035" style="zoom:80%;" />  <img src="README/image-20210110201820431.png" alt="image-20210110201820431" style="zoom:80%;" /> 
+<img src="README/image-20210110201810035.png" alt="image-20210110201810035" style="zoom:80%;" />  
+
+<img src="README/image-20210110201820431.png" alt="image-20210110201820431" style="zoom:80%;" /> 
 
 
 
@@ -418,7 +428,9 @@ Login： http://localhost:5000/auth/google/
 
 Current User： http://localhost:5000/api/current_user
 
-![image-20210126214135922](README/image-20210126214135922.png)  ![image-20210126214202677](README/image-20210126214202677.png) 
+![image-20210126214135922](README/image-20210126214135922.png)  
+
+![image-20210126214202677](README/image-20210126214202677.png) 
 
 # Log out Users
 
@@ -531,9 +543,9 @@ client folder is then created
 
 ![image-20210110202521753](README/image-20210110202521753.png)  
 
-## React Server
+## :rocket:React:rocket: Server
 
-![image-20210110202538747](README/image-20210110202538747.png)  
+<img src="README/image-20210110202538747.png" alt="image-20210110202538747" style="zoom:80%;" />  
 
 
 
@@ -563,7 +575,7 @@ Use concurrently module to start both server in one command
 
 - Proxy setup is only needed for Dev Mode
 
-  ![image-20210110202713267](README/image-20210110202713267.png) ![image-20210110202720703](README/image-20210110202720703.png) 
+  <img src="README/image-20210110202713267.png" alt="image-20210110202713267" style="zoom:80%;" /> <img src="README/image-20210110202720703.png" alt="image-20210110202720703" style="zoom:80%;" /> 
 
   
   
@@ -665,7 +677,7 @@ An async function is a function declared with the **async** keyword. Async funct
 
   
 
-   ![image-20210110235652496](README/image-20210110235652496.png) 
+   <img src="README/image-20210110235652496.png" alt="image-20210110235652496" style="zoom:80%;" /> 
 
   - New Syntax with Arrow function
 
@@ -673,7 +685,7 @@ An async function is a function declared with the **async** keyword. Async funct
 
     
 
-    ![image-20210110235745249](README/image-20210110235745249.png) 
+    <img src="README/image-20210110235745249.png" alt="image-20210110235745249" style="zoom:80%;" /> 
 
 
 
@@ -717,7 +729,7 @@ Create a folder, /components, under /client/src, and a file, App.js, under the f
 
 ![image-20210123182031351](README/image-20210123182031351.png) 
 
-## Redux Review and Setup
+## :rocket:Redux:rocket: Review and Setup
 
 ![image-20210123182144632](README/image-20210123182144632.png) ![image-20210123182150995](README/image-20210123182150995.png) 
 
@@ -744,7 +756,7 @@ Note: the purpose of calling this index.js is to allow us to import the reducers
 
 
 
-## React Router Setup
+## :rocket:React Router:rocket: Setup
 
 **react-router** is used to navigate between multiples pages/views of your front-end app/website. Usually in **a single page app**, where pages are loaded **dynamically**.
 **express router** is a way to return static content (index.html, image.png...) AND to handle api calls server-side usually triggering database logic. It handles backend routes.
@@ -763,7 +775,7 @@ class-based component is used to have function inside which will be responsible 
 
 ![image-20210124012409679](README/image-20210124012409679.png) 
 
-## Materialize CSS handled by Webpack
+## :rocket:Materialize CSS:rocket: handled by Webpack
 
 ![image-20210124012513597](README/image-20210124012513597.png) 
 
@@ -775,7 +787,7 @@ https://materializecss.com/navbar.html
 
 ![image-20210124014400099](README/image-20210124014400099.png) 
 
- ## Axios & Redux-Thunk + fetchUser action
+ ## :rocket:Axios & Redux-Thunk:rocket: + fetchUser action
 
 **Redux Thunk middleware**: allows you to write action creators that **return a function** instead of an action. The thunk can be used to **delay the dispatch of an action, or to dispatch only if a certain condition is met**. The inner function receives the store methods dispatch and getState as parameters.
 
@@ -840,7 +852,7 @@ After Action is separated into a function:
 
 ## AuthReducer Return values by different cases
 
-![image-20210124234053419](README/image-20210124234053419.png) 
+<img src="README/image-20210124234053419.png" alt="image-20210124234053419" style="zoom:80%;" /> 
 
 AuthReducer Return values, default state is null
 
@@ -900,7 +912,7 @@ Create a Landing component
 
 ![image-20210125003832050](README/image-20210125003832050.png) 
 
-# Link Tags
+# :rocket:Link Tags:rocket:
 
 Link the logo "Emaily" at the left upper corner to to root pages, and the redirects depends on if a user is logged in
 
@@ -914,7 +926,7 @@ Logged out: Landing page
 
 If a user is logged in, clicking logo will redirect to dashboard, otherwise, it will redirect to root page
 
-![image-20210126221133104](README/image-20210126221133104.png) 
+<img src="README/image-20210126221133104.png" alt="image-20210126221133104" style="zoom:80%;" /> 
 
 ![image-20210126221346686](README/image-20210126221346686.png) 
 
@@ -934,7 +946,7 @@ Header.js
 
 # Handling Payments:pig:
 
-## Construture
+## Structure
 
 Green: back-end
 Blue: front-end
@@ -949,7 +961,7 @@ Use **Stripe** to take care of payment processor
 
 <img src="README/image-20210125224614595.png" alt="image-20210125224614595" style="zoom:80%;" /> 
 
-## Stripe Billing Process
+## :rocket:Stripe:rocket: Billing Process
 
 <img src="README/image-20210125225208497.png" alt="image-20210125225208497" style="zoom:80%;" /> 
 
@@ -999,7 +1011,7 @@ Adding more info in StripeCheckout and some styling
 
 <img src="README/image-20210128001542831.png" alt="image-20210128001542831" style="zoom:67%;" /> 
 
-![image-20210128001856122](README/image-20210128001856122.png) 
+<img src="README/image-20210128001856122.png" alt="image-20210128001856122" style="zoom:67%;" /> 
 
 ### Add actions to handleToken
 
@@ -1019,7 +1031,7 @@ https://stripe.com/docs/api/charges/create
 
 ![image-20210128004114829](README/image-20210128004114829.png) 
 
-### install middleware body-parser
+### install middleware :rocket:body-parser:rocket:
 
 https://www.npmjs.com/package/body-parser
 
@@ -1041,7 +1053,7 @@ when you make post requests to use Express Server, Express does not by default p
 
 ### Adding credits to a User
 
-![image-20210128231247291](README/image-20210128231247291.png) 
+<img src="README/image-20210128231247291.png" alt="image-20210128231247291" style="zoom:80%;" /> 
 
 ![image-20210128231507317](README/image-20210128231507317.png)  ![image-20210128233440163](README/image-20210128233440163.png) 
 
@@ -1051,7 +1063,7 @@ when you make post requests to use Express Server, Express does not by default p
 
 ### Add Route-Specific Middleware to make sure users are logged in
 
-![image-20210129002000490](README/image-20210129002000490.png) 
+<img src="README/image-20210129002000490.png" alt="image-20210129002000490" style="zoom:80%;" /> 
 
 ![image-20210129010405406](README/image-20210129010405406.png) 
 
@@ -1085,7 +1097,7 @@ In Prod Mode, Express Server need to recognize that there are some routes that i
 
 We are taking option #2 
 
-![image-20210130143104323](README/image-20210130143104323.png) 
+<img src="README/image-20210130143104323.png" alt="image-20210130143104323" style="zoom:80%;" /> 
 
 https://devcenter.heroku.com/articles/nodejs-support 
 
@@ -1135,9 +1147,9 @@ We are not using the structure below, because of the physical limited Mongo Size
 
 <img src="README/image-20210131202645724.png" alt="image-20210131202645724" style="zoom:80%;" /> <img src="README/image-20210131202742733.png" alt="image-20210131202742733" style="zoom:80%;" /> 
 
-<img src="README/image-20210131202939743.png" alt="image-20210131202939743" style="zoom:80%;" />  =》  <img src="README/image-20210131203031595.png" alt="image-20210131203031595" style="zoom:80%;" /> 
+<img src="README/image-20210131202939743.png" alt="image-20210131202939743" style="zoom:80%;" />  =》  <img src="README/image-20210131203031595.png" alt="image-20210131203031595" style="zoom: 67%;" /> 
 
-<img src="README/image-20210131203333484.png" alt="image-20210131203333484" style="zoom:80%;" /> 
+<img src="README/image-20210131203333484.png" alt="image-20210131203333484" style="zoom: 67%;" /> 
 
 ![image-20210131231409452](README/image-20210131231409452.png) 
 
@@ -1145,11 +1157,11 @@ We are not using the structure below, because of the physical limited Mongo Size
 
 ![image-20210201011028452](README/image-20210201011028452.png) 
 
-## SendGrid
+## :rocket:**SendGrid**:rocket:
 
 A **webhook** in [web development](https://en.wikipedia.org/wiki/Web_development) is a method of augmenting or altering the behavior of a [web page](https://en.wikipedia.org/wiki/Web_page) or [web application](https://en.wikipedia.org/wiki/Web_application) with custom [callbacks](https://en.wikipedia.org/wiki/Callback_(computer_programming)). These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating website or application.
 
-<img src="README/image-20210131203603993.png" alt="image-20210131203603993" style="zoom: 67%;" />  =》<img src="README/image-20210131204420858.png" alt="image-20210131204420858" style="zoom:80%;" /> 
+<img src="README/image-20210131203603993.png" alt="image-20210131203603993" style="zoom: 50%;" />  =》<img src="README/image-20210131204420858.png" alt="image-20210131204420858" style="zoom:80%;" /> 
 
 Register SendGrid
 
@@ -1179,7 +1191,7 @@ Test:
 
 ![image-20210201015019323](README/image-20210201015019323.png) 
 
-<img src="README/image-20210201014853643.png" alt="image-20210201014853643"  />  <img src="README/image-20210201014906370.png" alt="image-20210201014906370" style="zoom:80%;" /> 
+<img src="README/image-20210201014853643.png" alt="image-20210201014853643" style="zoom:80%;" />  <img src="README/image-20210201014906370.png" alt="image-20210201014906370" style="zoom:80%;" /> 
 
 
 
@@ -1207,13 +1219,15 @@ Add redirectDomain in prod.js, dev.js and heroku config vars
 
 ## Dashboard component
 
-<img src="README/image-20210201225917437.png" alt="image-20210201225917437" style="zoom:67%;" /> <img src="README/image-20210201225853701.png" alt="image-20210201225853701" style="zoom: 80%;" /> 
+<img src="README/image-20210201225917437.png" alt="image-20210201225917437" style="zoom:67%;" /> 
+
+<img src="README/image-20210201225853701.png" alt="image-20210201225853701" style="zoom: 80%;" /> 
 
 
 
 <img src="README/image-20210202003059214.png" alt="image-20210202003059214" style="zoom: 80%;" /> 
 
-![image-20210202003234215](README/image-20210202003234215.png) 
+<img src="README/image-20210202003234215.png" alt="image-20210202003234215" style="zoom:80%;" /> 
 
 - Anchor tag or Link tag from React Router:
 
@@ -1233,7 +1247,7 @@ https://markadamfoster.com/react-anchor-tags-vs-link-components/
 
 
 
-## Purpose of Redux Form
+## :rocket:Redux Form:rocket:
 
 ### Structure: 
 
@@ -1290,15 +1304,122 @@ See the logged values blow: key is the Field name, value is the input
 
 ![image-20210202233848541](README/image-20210202233848541.png) 
 
+props:
 
+![image-20210203203243428](README/image-20210203203243428.png) 
 
-![image-20210203005458442](README/image-20210203005458442.png) 
-
-
+![image-20210203201414958](README/image-20210203201414958.png) 
 
 ![image-20210203004858171](README/image-20210203004858171.png) 
 
+## Add Form Validation 
 
+-  Validation + Styling: must provide title (display the error only when "touched")
+
+<img src="README/image-20210204005929988.png" alt="image-20210204005929988" style="zoom:80%;" />  <img src="README/image-20210204010015613.png" alt="image-20210204010015613" style="zoom:80%;" /> 
+
+props.meta:
+
+<img src="README/image-20210204011825420.png" alt="image-20210204011825420" style="zoom:80%;" />  => ![image-20210204005632742](README/image-20210204005632742.png) 
+
+<img src="README/image-20210204010357085.png" alt="image-20210204010357085" style="zoom: 67%;" /> 
+
+- Add validation for all the fields +  Destructure
+
+![image-20210204011629377](README/image-20210204011629377.png) 
+
+![image-20210204011704096](README/image-20210204011704096.png)  <img src="README/image-20210204011404868.png" alt="image-20210204011404868" style="zoom: 67%;" /> 
+
+- Add more validation of emails
+
+recipients should be commo separated
+
+<img src="README/image-20210204012557377.png" alt="image-20210204012557377" style="zoom:80%;" /> 
+
+![image-20210204020849166](README/image-20210204020849166.png) 
+
+![image-20210204020954995](README/image-20210204020954995.png)                <img src="README/image-20210204021025318.png" alt="image-20210204021025318" style="zoom: 80%;" /> 
+
+
+
+
+
+## SurveyFormReview
+
+### Structure
+
+ 3 options to deal with SurveyFormReview:
+
+- separate route: if a user accidentally accesses to the route directly, it will be an empty form. trade off: redirect it back to SurveyForm
+- Redux: in current case, it takes a lot of extra code to implement (creating extra action, action creator, reducer...)
+- Component State: add a state to SurveyNew to decide if SurveyForm or SurveyFormReview should be displayed
+
+We take the third option.
+
+
+
+Redux State or Component State
+
+https://blog.jakoblind.no/is-using-a-mix-of-redux-state-and-react-local-component-state-ok/
+
+<img src="README/image-20210204020754697.png" alt="image-20210204020754697" style="zoom:80%;" /> 
+
+### Add SurveyFormReview component
+
+<img src="README/image-20210204235513620.png" alt="image-20210204235513620" style="zoom:80%;" /> 
+
+Separate fields into a separate file
+
+![image-20210205003618538](README/image-20210205003618538.png) 
+
+Add component state "showFormReview" to SurveyNew
+
+![image-20210205005345915](README/image-20210205005345915.png) 
+
+![image-20210205005126181](README/image-20210205005126181.png) 
+
+![image-20210205010306287](README/image-20210205010306287.png) 
+
+<img src="README/image-20210205011247375.png" alt="image-20210205011247375" style="zoom:80%;" /> => <img src="README/image-20210205011300416.png" alt="image-20210205011300416" style="zoom:80%;" /> 
+
+### Dumping Form Values
+
+This will destroyOnUnmount(default is true) when navigate to other route. e.g. hit cancel on SurveyForm page
+
+since in SurveyForm.js, destroyOnUnmount was already disabled in last step, value will be kept when toggling between SurveyForm and SurveyFormReview only.
+
+<img src="README/image-20210202003825828.png" alt="image-20210202003825828" style="zoom:80%;" /> 
+
+![image-20210206215149906](README/image-20210206215149906.png) 
+
+![image-20210206214303795](README/image-20210206214303795.png) 
+
+### Add Submit Survey button
+
+
+
+Refactor property name to keep server side and client side consistent 
+
+<img src="README/image-20210205013525462.png" alt="image-20210205013525462" style="zoom:80%;" />  <img src="README/image-20210206133019656.png" alt="image-20210206133019656" style="zoom:80%;" /> 
+
+<img src="README/image-20210206132530309.png" alt="image-20210206132530309" style="zoom:80%;" />  <img src="README/image-20210206132710109.png" alt="image-20210206132710109" style="zoom:80%;" /> 
+
+Posting to Surveys and Redirect on Submit by :rocket:withRouter:rocket: hepler
+
+<img src="README/image-20210205013636037.png" alt="image-20210205013636037" style="zoom: 67%;" /> 
+
+<img src="README/image-20210206134135378.png" alt="image-20210206134135378" style="zoom:67%;" /> =》<img src="README/image-20210206134206168.png" alt="image-20210206134206168" style="zoom:67%;" /> 
+
+![image-20210206135040031](README/image-20210206135040031.png) 
+
+![image-20210206134942295](README/image-20210206134942295.png) 
+
+# Handling  Webhood Data
+
+
+
+
+
+![image-20210206165345724](README/image-20210206165345724.png) 
 
  
-
