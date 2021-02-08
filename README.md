@@ -1545,3 +1545,7 @@ Component + dispatch:
 ![image-20210208002531129](README/image-20210208002531129.png) 
 
 ![image-20210208002731031](README/image-20210208002731031.png) 
+
+# Suggestion of Expanding the App 
+
+![image-20210208004251706](README/image-20210208004251706.png) 
