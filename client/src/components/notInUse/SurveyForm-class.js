@@ -1,14 +1,14 @@
 // SurveyForm shows a form for a user to add input
 import _ from "lodash";
-import React from "react";
+import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
 import { Link } from "react-router-dom";
-import SurveyField from "./SurveyField";
+import SurveyField from "../surveys/SurveyField";
 import validateEmails from "../../utils/validateEmails";
-import formFields from "./formFields";
+import formFields from "../surveys/formFields";
 
-const SurveyForm = (props) => {
-  const renderFields = () => {
+class SurveyForm extends Component {
+  renderFields() {
     return _.map(formFields, ({ label, name }) => {
       return (
         <Field
@@ -20,30 +20,32 @@ const SurveyForm = (props) => {
         />
       );
     });
-  };
+  }
 
-  return (
-    <div>
-      <form
-        onSubmit={props.handleSubmit((values) => {
-          //console.log(values);
-          props.onSurveySubmit();
-        })}
-      >
-        {renderFields()}
-        <Link to="/surveys" className="red btn-flat white-text">
-          Cancel
-        </Link>
-        <button type="submit" className="teal btn-flat right white-text">
-          Next
-          <i className="material-icons right">done</i>
-        </button>
-      </form>
-    </div>
-  );
-};
+  render() {
+    return (
+      <div>
+        <form
+          onSubmit={this.props.handleSubmit((values) => {
+            //console.log(values);
+            this.props.onSurveySubmit();
+          })}
+        >
+          {this.renderFields()}
+          <Link to="/surveys" className="red btn-flat white-text">
+            Cancel
+          </Link>
+          <button type="submit" className="teal btn-flat right white-text">
+            Next
+            <i className="material-icons right">done</i>
+          </button>
+        </form>
+      </div>
+    );
+  }
+}
 
-const validate = (values) => {
+function validate(values) {
   const errors = {};
 
   errors.recipients = validateEmails(values.recipients || "");
@@ -55,7 +57,7 @@ const validate = (values) => {
   });
 
   return errors;
-};
+}
 
 export default reduxForm({
   validate: validate,

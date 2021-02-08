@@ -1546,6 +1546,14 @@ Component + dispatch:
 
 ![image-20210208002731031](README/image-20210208002731031.png) 
 
+# Change class-based component to function-based component
+
+![image-20210208024139648](README/image-20210208024139648.png) 
+
+![image-20210208024323715](README/image-20210208024323715.png) 
+
+![image-20210208024414024](README/image-20210208024414024.png) 
+
 # Suggestion of Expanding the App 
 
 ![image-20210208004251706](README/image-20210208004251706.png) 

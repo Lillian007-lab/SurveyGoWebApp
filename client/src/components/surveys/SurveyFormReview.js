@@ -38,10 +38,10 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
   );
 };
 
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
   //console.log(state);
   return { formValues: state.form.surveyForm.values };
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
   return {
