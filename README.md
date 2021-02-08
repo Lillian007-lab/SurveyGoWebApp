@@ -1510,8 +1510,38 @@ click multiple times from one recipient. choice(yes/no) is only increased once
 
 ![image-20210207230156501](README/image-20210207230156501.png) 
 
+# The Homepage Stretch
 
+![image-20210208000614351](README/image-20210208000614351.png) 
 
+## Back End
 
+select surveys of current user, excluding recipients
 
- 
+![image-20210207234454143](README/image-20210207234454143.png) 
+
+test: surveys are returned and 
+
+![image-20210207235051282](README/image-20210207235051282.png) 
+
+ ## Front End
+
+Action:
+
+![image-20210208002410908](README/image-20210208002410908.png) 
+
+![image-20210208002441667](README/image-20210208002441667.png) 
+
+Reducer:
+
+![image-20210208002609152](README/image-20210208002609152.png) 
+
+![image-20210208002628631](README/image-20210208002628631.png) 
+
+Component + dispatch:
+
+![image-20210208002510230](README/image-20210208002510230.png) 
+
+![image-20210208002531129](README/image-20210208002531129.png) 
+
+![image-20210208002731031](README/image-20210208002731031.png) 
