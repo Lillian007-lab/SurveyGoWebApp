@@ -1159,7 +1159,9 @@ We are not using the structure below, because of the physical limited Mongo Size
 
 ## :rocket:**SendGrid**:rocket:
 
-A **webhook** in [web development](https://en.wikipedia.org/wiki/Web_development) is a method of augmenting or altering the behavior of a [web page](https://en.wikipedia.org/wiki/Web_page) or [web application](https://en.wikipedia.org/wiki/Web_application) with custom [callbacks](https://en.wikipedia.org/wiki/Callback_(computer_programming)). These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating website or application.
+A **webhook** in web development is a **method** of augmenting or altering the behavior of a [web page](https://en.wikipedia.org/wiki/Web_page) or [web application](https://en.wikipedia.org/wiki/Web_application) with **custom callbacks**. These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating website or application.
+
+SendGrid knows who clicked the link in survey
 
 <img src="README/image-20210131203603993.png" alt="image-20210131203603993" style="zoom: 50%;" />  =》<img src="README/image-20210131204420858.png" alt="image-20210131204420858" style="zoom:80%;" /> 
 
@@ -1247,7 +1249,7 @@ https://markadamfoster.com/react-anchor-tags-vs-link-components/
 
 
 
-## :rocket:Redux Form:rocket:
+## Apply​ :rocket:Redux Form:rocket:
 
 ### Structure: 
 
@@ -1414,12 +1416,102 @@ Posting to Surveys and Redirect on Submit by :rocket:withRouter:rocket: hepler
 
 ![image-20210206134942295](README/image-20210206134942295.png) 
 
-# Handling  Webhood Data
+# Handling Webhook Data
+
+## SendGrid Webhook workflow
+
+<img src="README/image-20210206165345724.png" alt="image-20210206165345724" style="zoom:80%;" />   <img src="README/image-20210206225643791.png" alt="image-20210206225643791" style="zoom:80%;" /> 
+
+## Webhook in Development Mode using :rocket:Ngrok:rocket:
+
+
+
+<img src="README/image-20210206230025235.png" alt="image-20210206230025235" style="zoom:80%;" />  <img src="README/image-20210206230123213.png" alt="image-20210206230123213" style="zoom:80%;" /> 
+
+LocalTunnel Server 
+
+<img src="README/image-20210206230317678.png" alt="image-20210206230317678" style="zoom:80%;" /> 
+
+Using Ngrok instead of LocalTunnel
+
+A quick note about production, since this has been a major topic of confusion. The Ngrok session (and the LocalTunnel usage from the videos) are *development only*. These tools only serve to allow Sendgrid to post back to your application running on localhost. If you were to deploy your finished application to Heroku and users filled out a survey, the Sendgrid integration for click tracking would post directly to your Heroku application
+
+### Setting up Ngrok
+
+![image-20210207005121310](README/image-20210207005121310.png) 
+
+In SendGrid Web dashboard, navigate to setting/Mail Setting/ Event Webhook. Provide URL, check clicked events and enable Event Webhook
+
+![image-20210207010135217](README/image-20210207010135217.png) 
+
+Add an API Handler for testing:
+
+![image-20210207005400037](README/image-20210207005400037.png) 
+
+Here, we only care about "click" event
+
+<img src="README/image-20210207005943440.png" alt="image-20210207005943440" style="zoom:80%;" /> 
+
+After send a testing survey: 
+
+![image-20210207010614216](README/image-20210207010614216.png) 
+
+
+
+## Encoding Survey Data
+
+
+
+![image-20210207010716893](README/image-20210207010716893.png) 
+
+To record actual feedback, we can define different href based on "yes", "no" button along with survey ID
+
+<img src="README/image-20210207010803188.png" alt="image-20210207010803188" style="zoom: 80%;" />  ![image-20210207011241676](README/image-20210207011241676.png) 
+
+![image-20210207011453454](README/image-20210207011453454.png)  
+
+## Preprocessing to prevent dirty data from webhooks - SendGrid
+
+
+
+Only Care the Green one:
+
+ ![image-20210207132203893](README/image-20210207132203893.png) ![image-20210207131748648](README/image-20210207131748648.png) 
+
+  
+
+Chain lodash statements 
+
+![image-20210207153259581](README/image-20210207153259581.png) 
+
+install lodash, path-parser
+
+![image-20210207153503238](README/image-20210207153503238.png) 
+
+![image-20210207153414845](README/image-20210207153414845.png) 
+
+
+
+## Database update
+
+Process only when survey ID & recipient email matches and  it's not responded
+
+<img src="README/image-20210207152410003.png" alt="image-20210207152410003" style="zoom:80%;" /> <img src="README/image-20210207183003431.png" alt="image-20210207183003431" style="zoom:80%;" /> 
+
+Mongo query:
+
+<img src="README/image-20210207183937790.png" alt="image-20210207183937790" style="zoom:80%;" /> 
+
+![image-20210207225744363](README/image-20210207225744363.png) 
+
+
+
+click multiple times from one recipient. choice(yes/no) is only increased once
+
+![image-20210207230156501](README/image-20210207230156501.png) 
 
 
 
 
-
-![image-20210206165345724](README/image-20210206165345724.png) 
 
  
