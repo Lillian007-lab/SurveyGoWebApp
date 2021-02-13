@@ -8,6 +8,7 @@ import Header from "./Header";
 import Landing from "./Landing";
 import Dashboard from "./Dashboard";
 import SurveyNew from "./surveys/SurveyNew";
+import Footer from "./Footer";
 
 const App = (props) => {
   // console.log("log from App");
@@ -19,16 +20,14 @@ const App = (props) => {
   }, [props]);
 
   return (
-    <div className="container">
-      <BrowserRouter>
-        <div className="container">
-          <Header />
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/surveys" component={Dashboard} />
-          <Route path="/surveys/new" component={SurveyNew} />
-        </div>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+        <Route exact path="/" component={Landing} />
+        <Route exact path="/surveys" component={Dashboard} />
+        <Route path="/surveys/new" component={SurveyNew} />
+      </div>
+    </BrowserRouter>
   );
 };
 

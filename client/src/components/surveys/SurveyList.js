@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { fetchSurveys } from "../../actions";
 
+import "../../css/styles.css";
+
 const SurveyList = (props) => {
   useEffect(() => {
     props.fetchSurveys();

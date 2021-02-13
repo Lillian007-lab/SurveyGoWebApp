@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.Header {
+  background-color: #79b5bd;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #e8d5b5;
+}
+
+.HeaderTextColor {
+  color: #e8d5b5;
+}
+
+.HeaderLogo {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.ButtonAddCredits {
+  background-color: #448088;
+}
+.ButtonAddCredits:hover {
+  background-color: #186a75;
+}
+
+.Landing {
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  color: #eb7527;
+}
+
+.AddSurveyButton {
+  background-color: #eb7527;
+}
+.AddSurveyButton:hover {
+  background-color: #cf5a0c;
+}
+
+.button {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.card-content {
+  background-color: #ebcdbe;
+  color: #b65622;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+html {
+  background: url("../img/mountain.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer {
+  font-family: "Montserrat";
+  /* font-weight: bold; */
+  text-align: center;
+  padding: 3px;
+  color: #eb7527;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+}

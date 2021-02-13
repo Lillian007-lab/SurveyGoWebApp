@@ -1,10 +1,13 @@
 import React from "react";
+import Footer from "./Footer";
+import "../css/styles.css";
 
 const Landing = () => {
   return (
-    <div style={{ textAlign: "center" }}>
-      <h1>Emaily!</h1>
-      Collect feedback from your users
+    <div className="LandingSubtitle Landing">
+      <h1 className="LandingTitle">SurveyGo</h1>
+      <h5>Collect feedback from your users</h5>
+      <Footer />
     </div>
   );
 };
