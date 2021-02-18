@@ -13,7 +13,7 @@ const Payments = (props) => {
       token={(token) => props.handleToken(token)}
       stripeKey={process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY}
     >
-      <button className="btn ButtonAddCredits button HeaderTextColor">
+      <button className="btn ButtonAddCreditsNext button HeaderTextColor">
         Add Credits
       </button>
     </StripeCheckout>

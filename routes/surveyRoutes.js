@@ -11,9 +11,11 @@ const Survey = mongoose.model("surveys");
 
 module.exports = (app) => {
   app.get("/api/surveys", requireLogin, async (req, res) => {
-    const surveys = await Survey.find({ _user: req.user.id }).select({
-      recipients: false,
-    });
+    const surveys = await Survey.find({ _user: req.user.id })
+      .sort({ dateSent: "desc" })
+      .select({
+        recipients: false,
+      });
     res.send(surveys);
   });
 
@@ -22,7 +24,9 @@ module.exports = (app) => {
   });
 
   app.post("/api/surveys/webhooks", (req, res) => {
-    // console.log(req.body);
+    console.log("webhooks req.body:");
+    console.log(req.body);
+    // console.log(req.body.length);
     const p = new Path("/api/surveys/:surveyId/:choice");
 
     _.chain(req.body)
@@ -42,19 +46,26 @@ module.exports = (app) => {
       .compact() //  remove undefined elements
       .uniqBy("email", "surveyId") // remove duplicated email and surveyId
       .each(({ surveyId, email, choice }) => {
-        Survey.updateOne(
-          {
-            _id: surveyId,
-            recipients: {
-              $elemMatch: { email: email, responded: false },
+        const findRecipientQuery = Survey.find({
+          _id: surveyId,
+          // "recipients.email": email,
+          recipients: {
+            $elemMatch: {
+              email: email,
+              // repliedTimestamp: { $lt: new Date(repliedTimestamp * 1000) },
+              responded: false,
             },
           },
-          {
-            $inc: { [choice]: 1 },
-            $set: { "recipients.$.responded": true },
-            lastResponded: new Date(),
-          }
-        ).exec();
+        });
+
+        Survey.updateOne(findRecipientQuery, {
+          $inc: { [choice]: 1 },
+
+          $set: {
+            "recipients.$.responded": true,
+          },
+          lastResponded: new Date(),
+        }).exec();
       })
       .value();
 
@@ -89,5 +100,25 @@ module.exports = (app) => {
     } catch (err) {
       res.status(422).send(err);
     }
+  });
+
+  app.delete("/api/survey", requireLogin, async (req, res) => {
+    // console.log("from back end: ");
+    const { surveyid } = req.headers;
+
+    await Survey.remove({ _id: mongoose.Types.ObjectId(surveyid) }, (err) => {
+      if (!err) {
+        console.log("Survey id: " + surveyid + " is deleted");
+      } else {
+        console.log(err);
+      }
+    });
+
+    const surveys = await Survey.find({ _user: req.user.id })
+      .sort({ dateSent: "desc" })
+      .select({
+        recipients: false,
+      });
+    res.send(surveys);
   });
 };

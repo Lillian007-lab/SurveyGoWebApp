@@ -8,16 +8,14 @@ import Header from "./Header";
 import Landing from "./Landing";
 import Dashboard from "./Dashboard";
 import SurveyNew from "./surveys/SurveyNew";
-import Footer from "./Footer";
 
 const App = (props) => {
   // console.log("log from App");
   // console.log(props);
 
   useEffect(() => {
-    console.log("useEffect");
     props.fetchUser2();
-  }, [props]);
+  }, []);
 
   return (
     <BrowserRouter>

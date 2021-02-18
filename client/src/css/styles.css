@@ -16,10 +16,22 @@
   margin-left: 15px;
 }
 
-.ButtonAddCredits {
+.ButtonAddCreditsNext {
   background-color: #448088;
+  font-family: "Montserrat";
+  font-weight: bold;
 }
-.ButtonAddCredits:hover {
+.ButtonAddCreditsNext:hover {
+  background-color: #186a75;
+}
+
+.ButtonDelete {
+  background-color: #448088;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #e8d5b5;
+}
+.ButtonDelete:hover {
   background-color: #186a75;
 }
 
@@ -30,10 +42,12 @@
   color: #eb7527;
 }
 
-.AddSurveyButton {
+.AddSurveyCancelButton {
   background-color: #eb7527;
+  font-family: "Montserrat";
+  font-weight: bold;
 }
-.AddSurveyButton:hover {
+.AddSurveyCancelButton:hover {
   background-color: #cf5a0c;
 }
 
@@ -43,8 +57,14 @@
 }
 
 .card-content {
-  background-color: #ebcdbe;
+  background-color: #eccfbf;
   color: #b65622;
+}
+
+.container {
+  width: 1000px;
+  font-family: "Montserrat";
+  font-weight: bold;
 }
 
 h1 {
@@ -68,10 +88,9 @@ footer {
   /* font-weight: bold; */
   text-align: center;
   padding: 3px;
-  color: #eb7527;
+  color: #e47429;
   position: fixed;
-  bottom: 0;
+  bottom: 100px;
   left: 0;
   width: 100%;
-  height: 150px;
 }

@@ -11,7 +11,7 @@ const Dashboard = () => {
       <div className="fixed-action-btn ">
         <Link
           to="/surveys/new"
-          className="btn-floating btn-large waves-effect waves-red AddSurveyButton"
+          className="btn-floating btn-large waves-effect waves-red AddSurveyCancelButton"
         >
           <i className="material-icons">add</i>
         </Link>

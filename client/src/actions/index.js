@@ -1,6 +1,6 @@
 import axios from "axios";
 import { FETCH_USER } from "./types";
-import { FETCH_SURVEYS } from "./types";
+import { FETCH_SURVEYS, DELETE_SURVEY } from "./types";
 
 export const fetchUserSuccess = (user) => {
   return {
@@ -12,6 +12,13 @@ export const fetchUserSuccess = (user) => {
 export const fetchSurveysSuccess = (surveys) => {
   return {
     type: FETCH_SURVEYS,
+    payload: surveys,
+  };
+};
+
+export const deleteSurveySuccess = (surveys) => {
+  return {
+    type: DELETE_SURVEY,
     payload: surveys,
   };
 };
@@ -38,6 +45,17 @@ export const submitSurvey = (values, history) => async (dispatch) => {
 };
 
 export const fetchSurveys = () => async (dispatch) => {
-  const res = await axios.get("./api/surveys");
+  const res = await axios.get("/api/surveys");
+  dispatch(fetchSurveysSuccess(res.data));
+};
+
+export const deleteSurvey = (survey) => async (dispatch) => {
+  // console.log("from Frond End: ");
+  // console.log(survey);
+  const surveyId = survey._id;
+  const res = await axios.delete("/api/survey", {
+    headers: { surveyId: surveyId },
+  });
+  // console.log(res.data);
   dispatch(fetchSurveysSuccess(res.data));
 };

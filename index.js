@@ -23,7 +23,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(
   cookieSeesion({
-    maxAge: 30 * 24 * 60 * 60 * 1000, // one month
+    maxAge: 24 * 60 * 60 * 1000, // one day
     keys: [keys.cookieKey],
   })
 );

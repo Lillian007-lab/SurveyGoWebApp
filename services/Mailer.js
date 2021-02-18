@@ -26,7 +26,7 @@ module.exports = (survey, content) => {
     },
   };
 
-  sendgrid.send(msg);
+  sendgrid.sendMultiple(msg);
 };
 
 // class Mailer extends helper.Mail {

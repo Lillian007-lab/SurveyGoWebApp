@@ -7,6 +7,8 @@ import SurveyField from "./SurveyField";
 import validateEmails from "../../utils/validateEmails";
 import formFields from "./formFields";
 
+import "../../css/styles.css";
+
 const SurveyForm = (props) => {
   const renderFields = () => {
     return _.map(formFields, ({ label, name }) => {
@@ -23,20 +25,28 @@ const SurveyForm = (props) => {
   };
 
   return (
-    <div>
+    <div className="container">
       <form
         onSubmit={props.handleSubmit((values) => {
-          //console.log(values);
+          // console.log("values:");
+          // console.log(values);
           props.onSurveySubmit();
         })}
+        // style={{ fontSize: "55px" }}
       >
         {renderFields()}
-        <Link to="/surveys" className="red btn-flat white-text">
+        <Link
+          to="/surveys"
+          className="btn-flat white-text AddSurveyCancelButton"
+        >
           Cancel
         </Link>
-        <button type="submit" className="teal btn-flat right white-text">
+        <button
+          type="submit"
+          className="btn-flat right white-text ButtonAddCreditsNext"
+        >
           Next
-          <i className="material-icons right">done</i>
+          <i className="material-icons right ">done</i>
         </button>
       </form>
     </div>

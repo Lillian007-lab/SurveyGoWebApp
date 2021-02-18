@@ -16,11 +16,11 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
     );
   });
   return (
-    <div>
+    <div className="container">
       <h5>Please confirm your entries</h5>
       <div>{reviewFields}</div>
       <button
-        className="yellow white-text darken-3 btn-flat"
+        className="white-text darken-3 btn-flat AddSurveyCancelButton"
         onClick={onCancel}
       >
         Back
@@ -29,7 +29,7 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
         onClick={() => {
           submitSurvey(formValues, history);
         }}
-        className="green btn-flat right white-text"
+        className="btn-flat right white-text ButtonAddCreditsNext"
       >
         Send Survey
         <i className="material-icons right">email</i>
@@ -39,7 +39,8 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
 };
 
 const mapStateToProps = (state) => {
-  //console.log(state);
+  // console.log("formvalue: ");
+  // console.log(state.form.surveyForm.values);
   return { formValues: state.form.surveyForm.values };
 };
 

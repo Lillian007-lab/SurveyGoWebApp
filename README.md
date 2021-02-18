@@ -2,6 +2,10 @@
 
 # **Overview**
 
+
+
+<img src="README/image-20210213224437289.png" alt="image-20210213224437289" style="zoom:80%;" /> <img src="https://lh5.googleusercontent.com/swZnD6F11_1sDYcdidv6vXkmador8N0qZgMC3N29MYB721kD7lqk0JNTqqWemVCJOGPKbelgxQlY-tB3VIyK9HvTCKtQNU04zb02ecP7Z3MB--S2AQfbBXsY-3o_YlcPpBy1DRsr" alt="img" style="zoom:80%;" /> 
+
 ![image-20210110200221244](README/image-20210110200221244.png) ![img](https://lh4.googleusercontent.com/7uZ5fmGdg2l6MhUAwWuTrjiP0zPujc5z1gLXUiTBsoKQV_IU33juDf9rcDv9PTWe-70_6g6DdGW-s2jjGkpkST5PhQCUuOgHqqehYV6BT5nIFFR4AN1EJiKlfTzxHEvWhe_OA9Pu)  
 
   
@@ -10,11 +14,12 @@
 
 ## Initialize package and install :rocket:express :rocket:
 
-- **Node.js** is an open-source, cross-platform, back-end, JavaScript runtime environment that executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. 
-- **npm**: is a package manager for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry. 
-- **npx**: is a tool for executing Node package. it is intended to help round out the experience of using packages from the npm registry — the same way npm makes it super easy to install and manage dependencies hosted on the registry, npx makes it easy to use CLI tools and other executables hosted on the registry.
+- **Node.js** is an open-source, cross-platform, **back-end, JavaScript runtime environment** that executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. 
+- **npm**: is a **package manager** for the JavaScript programming language. It is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry. 
+- **npx**: is a tool for **executing** Node package. it is intended to help round out the experience of using packages from the npm registry — the same way npm makes it super easy to install and manage dependencies hosted on the registry, npx makes it easy to use CLI tools and other executables hosted on the registry.
 - **webpack**:  is an open-source **JavaScript module bundler**. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included. webpack takes modules with dependencies and generates static assets representing those modules. 
-- **module bundler**:  is a tool that takes pieces of JavaScript and their dependencies and bundles them into a single file, usually for use in the browser. 
+- **module bundler**:  is a tool that takes pieces of JavaScript and their dependencies and bundles them into **a single file**, usually for use in the browser. 
+- **Express.js**:  is a **back end web application framework for Node.js**, released as free and open-source software under the MIT License. It is designed for **building web applications and APIs**. It has been called the de facto standard server framework for Node.js.
 
 ````bash
 mkdir server
@@ -50,6 +55,8 @@ Response from localhost:5000
 
 # **Heroku Deployment**
 
+- **Heroku**: is a cloud platform as a service (PaaS) supporting several programming languages.
+
 <img src="README/image-20210110200435540.png" alt="image-20210110200435540" style="zoom:80%;" /> 
 
 ## Port setup
@@ -81,6 +88,8 @@ app.listen(PORT);
 
 ## :rocket:Heroku:rocket: deployment
 
+
+
 <img src="https://lh5.googleusercontent.com/hiwMNYiIBZIpjCedyl4fSKAS-T5nDIitIQ7bnWUqlEsD0dzIvjDTD6lShyoEEIkmT2GflKcELObRiBvzO7r1cou0nIJC2QwMhtpra9BS4feZubLE66fej7ieBLPRvcn479vppQ0B" alt="img" style="zoom:80%;" /> 
 
 ![image-20210126003413777](README/image-20210126003413777.png) 
@@ -89,17 +98,15 @@ app.listen(PORT);
 
 ![image-20210126014142291](README/image-20210126014142291.png) 
 
-<img src="https://lh5.googleusercontent.com/swZnD6F11_1sDYcdidv6vXkmador8N0qZgMC3N29MYB721kD7lqk0JNTqqWemVCJOGPKbelgxQlY-tB3VIyK9HvTCKtQNU04zb02ecP7Z3MB--S2AQfbBXsY-3o_YlcPpBy1DRsr" alt="img" style="zoom:80%;" /> 
+ 
 
 # **PassportJS + Google OAuth**
 
 ![img](https://lh3.googleusercontent.com/0mTLKfER1vFMWKvoPSvIn7DoRexvKv_GQKwLam96L5osFlr1DtLPxY20NGguRvG5Rmt7JDFoS27dRcp07YxtOXd-wEtJeR6GJ3NE0E-PlB2rf1ParS8q_UXP6bZKGchGvAq-VtNG) 
 
-![img](https://lh4.googleusercontent.com/ewIlM_E1fT8kpq2TWY7zuodxQyk3CBUU5F59YQusVu3wWN5drnUkYTyMztJ-9-BDKwcc6YZX6Nx8M_IqlCcViH2WNDb-Pqv7o1ZFjMoLGv0_RmBKzJequScqPMrhd9jYWmh8dyKQ) 
+![img](https://lh4.googleusercontent.com/ewIlM_E1fT8kpq2TWY7zuodxQyk3CBUU5F59YQusVu3wWN5drnUkYTyMztJ-9-BDKwcc6YZX6Nx8M_IqlCcViH2WNDb-Pqv7o1ZFjMoLGv0_RmBKzJequScqPMrhd9jYWmh8dyKQ)  <img src="https://lh6.googleusercontent.com/iXpoUsOkcbb7J-LGgIRhyS7NIZazChbTcqHQ5OrbjLi-HeILdk776ToIUrigkg22aAMqbsZAuQXfOoeb7zvrFtdYwtkbDcdr29GMg1s0BOfcRar7Ec9zbYyn1_8V3LM_emJWePgM" alt="img" style="zoom:80%;" /> 
 
-<img src="https://lh6.googleusercontent.com/iXpoUsOkcbb7J-LGgIRhyS7NIZazChbTcqHQ5OrbjLi-HeILdk776ToIUrigkg22aAMqbsZAuQXfOoeb7zvrFtdYwtkbDcdr29GMg1s0BOfcRar7Ec9zbYyn1_8V3LM_emJWePgM" alt="img" style="zoom:80%;" /> 
-
-## ​Google OAuth​​ register
+## Google OAuth​​ register
 
 Google Project Setup and OAuth Register:https://console.cloud.google.com/cloud-resource-manager?pli=1
 
@@ -108,6 +115,8 @@ Google OAuth client created:
 Client ID & Client Secret
 
 ## Install :rocket:Passport:rocket: and Passport-google-oath20 Securing API Keys (the client secret)
+
+- **Passport.js**: Passport is **authentication middleware** for Node.js. Extremely flexible and modular, Passport can be unobtrusively dropped in to any Express-based web application. A comprehensive set of strategies support authentication using a username and password, Facebook, Twitter, and more.
 
 <img src="https://lh6.googleusercontent.com/Lc4wMof-PBAiPSmV5vj8j0ng4Pr1UNpFRcby8Cz3HuZSt4P3TL97vvV5XM0OQFHNXzULxTMpdMX081XW9Kzz7Z3Z0nb_IO7ulsLZJ-UAPn4_tR-l7XeNK4v9H6yHWwh5VtmMk06Z" alt="img" style="zoom:80%;" /> 
 
@@ -131,6 +140,8 @@ Within keys.js, store your google client ID and secret. Make sure the file is ad
 
 ## Install and run :rocket:Nodemon:rocket:
 
+- **nodemon**: is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
 With nodemon, there is no need to restart (node index.js) the app every time when changes are made. Instead of “node index.js”, we can set off “npm run dev” and if any change is added, server will be restarted automatically.
 
 <img src="README/image-20210110200710086.png" alt="image-20210110200710086" style="zoom:50%;" /> 
@@ -147,9 +158,7 @@ With nodemon, there is no need to restart (node index.js) the app every time whe
 
 #  **Authentication Theory and Signing in User with OAuth**:octopus:
 
-<img src="https://lh3.googleusercontent.com/Ryospzp_V_yCty8b1CjldoGKHNVIZdoA_319_h1ktXvE9RuYjYHWAMBSuDeDNArWPkIftFugLxSpW8dYHlpNCsl3hBy3w_-Fr-G3spv0xxN9AfFXqik-y3Am9GC3aT7kVkILNqkI" alt="img" style="zoom:80%;" /> 
-
-<img src="https://lh5.googleusercontent.com/rpT3X_VXmTSczQruGc8WdEDeQBVdX9eKEwMUiSBXtgkQTrUWz5bD4iOOp4USbL3oBbwJUUU6O8CFYUSu52gX6RP0bLJWXt2neomKcFIXYGw3waUJ-J_JaHOxegnjwvRcHt4xxNmt" alt="img" style="zoom:80%;" /> 
+<img src="https://lh3.googleusercontent.com/Ryospzp_V_yCty8b1CjldoGKHNVIZdoA_319_h1ktXvE9RuYjYHWAMBSuDeDNArWPkIftFugLxSpW8dYHlpNCsl3hBy3w_-Fr-G3spv0xxN9AfFXqik-y3Am9GC3aT7kVkILNqkI" alt="img" style="zoom: 67%;" /> <img src="https://lh5.googleusercontent.com/rpT3X_VXmTSczQruGc8WdEDeQBVdX9eKEwMUiSBXtgkQTrUWz5bD4iOOp4USbL3oBbwJUUU6O8CFYUSu52gX6RP0bLJWXt2neomKcFIXYGw3waUJ-J_JaHOxegnjwvRcHt4xxNmt" alt="img" style="zoom:80%;" /> 
 
 ![img](https://lh5.googleusercontent.com/xh-h79mCJmpD450sr8fsmYtosWceL0eNFnnf61CDB3-fx8BJen6isBVe5jMiOxjo5mgfOyK7pCu_WYw6RsDIP9EkmN3uKriblcrHN0x7z2PBBOpdKThOp1Pb2nhNznhUtiqZ5mt3) 
 
@@ -176,7 +185,7 @@ OAuth: cookie/**token**? based authentication 验证 (Authorization 授权)
 
 - **JSON Web Token (JWT)** is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret (with the **HMAC** algorithm) or a public/private key pair using **RSA** or **ECDSA**.
 
-  JWT can be used for **authorization** and **information exchange**.
+  JWT can be used for **authentication**, **authorization** and **information exchange**.
 
   <img src="README/image-20210110200847137.png" alt="image-20210110200847137" style="zoom: 67%;" /> 
 
@@ -208,7 +217,7 @@ OAuth: cookie/**token**? based authentication 验证 (Authorization 授权)
 
 - **HTTP Headers:**
 
-  *HTTP header fields** are components of the header section of [request](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_message) and [response](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Response_message) messages in the [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) (HTTP). They define the operating parameters of an HTTP 
+  *HTTP header fields* are components of the header section of [request](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_message) and [response](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Response_message) messages in the [Hypertext Transfer Protocol](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) (HTTP). They define the operating parameters of an HTTP 
 
 - **Session**:
 
@@ -249,6 +258,8 @@ Create cluster , DB user
 
 ## Install :rocket:Mongoose:rocket:
 
+**Mongoose**: provides a straight-forward, schema-based solution to model your application data. It includes built-in type casting, validation, query building, business logic hooks and more, out of the box.
+
 ![img](https://lh6.googleusercontent.com/nVb5KGG67Yqpi8kMfTEz4y2SqZ6z4o41oxxM-XoxgJncrEORF3BZRZJMVVuraZxInXIigeVI5BU67ujNkea80YoGfkM0-UjYqQ48C2DZwud-5IvL8KsR3uWGEgei0tGsUw2AR140) 
 
 ## Using Mongoose to connect Mongo
@@ -269,9 +280,7 @@ keys.js
 
 **![img](https://lh6.googleusercontent.com/slzmZ8W7_0ccmhf9CKWckkr9dghVIO15430cxsx5Yi9h-u3OeG5A5GlS0kK483QvmuvBd9R9t38L-Mft-E4loKHM9d-X0NorktKkFr4V2o0ooidxJ6-6RerFroYzkj4w8aUoYpdR)** 
 
-## Import Mongoose Model Class in index.js
 
-**![img](https://lh6.googleusercontent.com/GJ5esschrkA0-X_qpP6t2ZQGC2pM0nwbdWcecbiPbfUlfu2bii6OTkkEsuX49AEWliGgJJXgqHBEgITcusnWY7amJw6WP3DoTu6kVN8ggEum69ScVmviMlt-9HF58bRFpAYERJC2)** 
 
 ## Apply Mongoose Model Class to passport.js, to save googleId to Mongo DB when authentication
 
@@ -372,6 +381,8 @@ serialize and deserialize Mongo DB ID, rather than profile id
 
 <img src="README/image-20210126213847336.png" alt="image-20210126213847336" style="zoom:80%;" /> 
 
+![image-20210214211743012](README/image-20210214211743012.png) 
+
 ![image-20210110201552080](README/image-20210110201552080.png)  
 
  <img src="README/image-20210110201603036.png" alt="image-20210110201603036" style="zoom:80%;" />  
@@ -408,6 +419,8 @@ if response just send the request session, you will find the session context, wh
 
 <img src="README/image-20210110201810035.png" alt="image-20210110201810035" style="zoom:80%;" />  
 
+Express Session:
+
 <img src="README/image-20210110201820431.png" alt="image-20210110201820431" style="zoom:80%;" /> 
 
 
@@ -415,6 +428,18 @@ if response just send the request session, you will find the session context, wh
 # Workflow of every request
 
 ![image-20210110201837417](README/image-20210110201837417.png)  
+
+
+
+ 
+
+
+
+
+
+ 
+
+
 
 # Testing authentication by adding a route handler to deal with response
 
@@ -444,7 +469,23 @@ Logout： http://localhost:5000/api/logout
 
 ![image-20210110201956552](README/image-20210110201956552.png) 
 
+# More details of cookie-session
+
 <img src="README/image-20210110202006890.png" alt="image-20210110202006890" style="zoom:67%;" />  
+
+![image-20210214143817548](README/image-20210214143817548.png) 
+
+
+
+![image-20210214144745411](README/image-20210214144745411.png) 
+
+![image-20210214144833624](README/image-20210214144833624.png) 
+
+![image-20210214144942407](README/image-20210214144942407.png) 
+
+
+
+
 
 
 
@@ -565,7 +606,7 @@ Use concurrently module to start both server in one command
 
 - what is proxy?
 
-  In [computer networking](https://en.wikipedia.org/wiki/Computer_networking), a **proxy server** is a [server](https://en.wikipedia.org/wiki/Server_(computing)) application or appliance that acts as an [intermediary](https://en.wikipedia.org/wiki/Intermediary) for requests from [clients](https://en.wikipedia.org/wiki/Client_(computing)) seeking resources from servers that provide those resources.[[1\]](https://en.wikipedia.org/wiki/Proxy_server#cite_note-1) A proxy server thus functions on behalf of the client when requesting service, potentially masking the true origin of the request to the resource server.
+  In [computer networking](https://en.wikipedia.org/wiki/Computer_networking), a **proxy server** is a [server](https://en.wikipedia.org/wiki/Server_(computing)) application or appliance that acts as an [intermediary](https://en.wikipedia.org/wiki/Intermediary) for requests from [clients](https://en.wikipedia.org/wiki/Client_(computing)) seeking resources from servers that provide those resources. A proxy server thus functions on behalf of the client when requesting service, potentially masking the true origin of the request to the resource server.
 
 - Why proxy?
 
@@ -621,7 +662,7 @@ similar to domain change =>
 
 ![image-20210110203006243](README/image-20210110203006243.png)   
 
-2. Cross-origin resource sharing (CORS) : is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.
+2. **Cross-origin resource sharing** (CORS) : is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.
 
    Browser security feature
 
@@ -712,10 +753,6 @@ Components:
 
 ## Client React Setup
 
-![image-20210123181015536](README/image-20210123181015536.png) ![image-20210123181029687](README/image-20210123181029687.png) 
-
-​     
-
 Install modules under client folder
 
 <img src="README/image-20210123181731322.png" alt="image-20210123181731322" style="zoom: 67%;" /> 
@@ -735,7 +772,7 @@ Create a folder, /components, under /client/src, and a file, App.js, under the f
 
 ![image-20210123182200806](README/image-20210123182200806.png) ![image-20210123182217134](README/image-20210123182217134.png) 
 
-<img src="README/image-20210120210435231.png" alt="image-20210120210435231" style="zoom:80%;" /> 
+![image-20210214160738338](README/image-20210214160738338.png)  
 
 ![image-20210123182230949](README/image-20210123182230949.png) 
 
@@ -758,12 +795,16 @@ Note: the purpose of calling this index.js is to allow us to import the reducers
 
 ## :rocket:React Router:rocket: Setup
 
-**react-router** is used to navigate between multiples pages/views of your front-end app/website. Usually in **a single page app**, where pages are loaded **dynamically**.
-**express router** is a way to return static content (index.html, image.png...) AND to handle api calls server-side usually triggering database logic. It handles backend routes.
+**react-router** is used to navigate between multiples pages/views of your **front-end** app/website. Usually in **a single page app**, where pages are loaded **dynamically**.
+**express router** is a way to return static content (index.html, image.png...) AND to handle **api** calls **server-side** usually triggering database logic. It handles backend routes.
+
+![image-20210123181015536](README/image-20210123181015536.png) ![image-20210123181029687](README/image-20210123181029687.png) 
 
 ![image-20210123185255569](README/image-20210123185255569.png)  
 
 ![image-20210123185304696](README/image-20210123185304696.png) ![image-20210123185315140](README/image-20210123185315140.png) ![image-20210123185322186](README/image-20210123185322186.png) 
+
+
 
 ## Create class-based component for Header
 
@@ -884,6 +925,8 @@ After logged out:
 
 ![image-20210126220548761](README/image-20210126220548761.png) 
 
+
+
 # redirect on Log out
 
 Two options:
@@ -932,7 +975,7 @@ If a user is logged in, clicking logo will redirect to dashboard, otherwise, it 
 
 # Change class-based component to function-based component
 
-
+**useEffect** Hook: By using this Hook, you tell React that your component needs to do something **after render**. React will remember the function you passed (we’ll refer to it as our “effect”), and call it later after performing the DOM updates. In this effect, we set the document title, but we could also perform data fetching or call some other imperative API.
 
 App.js
 
@@ -1035,7 +1078,7 @@ https://stripe.com/docs/api/charges/create
 
 https://www.npmjs.com/package/body-parser
 
-when you make post requests to use Express Server, Express does not by default parse the request payload. This is a middleware to parse it and make it available anywhere in the application. Parse incoming request bodies in a middleware before your handlers, available under the `req.body` property.
+when you make post requests to use Express Server, Express does not by default parse the request payload. This is a middleware to parse it and make it available anywhere in the application. **Parse incoming request bodies** in a middleware before your handlers, available under the `req.body` property.
 
 ![image-20210128010235336](README/image-20210128010235336.png) 
 
@@ -1094,6 +1137,8 @@ In Prod Mode, Express Server need to recognize that there are some routes that i
 ![image-20210130143040853](README/image-20210130143040853.png) 
 
 ## Deployment Options
+
+<img src="README/image-20210214212256551.png" alt="image-20210214212256551" style="zoom:67%;" /> 
 
 We are taking option #2 
 
@@ -1380,7 +1425,7 @@ Add component state "showFormReview" to SurveyNew
 
 ![image-20210205005126181](README/image-20210205005126181.png) 
 
-![image-20210205010306287](README/image-20210205010306287.png) 
+ ![image-20210205010306287](README/image-20210205010306287.png)
 
 <img src="README/image-20210205011247375.png" alt="image-20210205011247375" style="zoom:80%;" /> => <img src="README/image-20210205011300416.png" alt="image-20210205011300416" style="zoom:80%;" /> 
 
@@ -1396,7 +1441,7 @@ since in SurveyForm.js, destroyOnUnmount was already disabled in last step, valu
 
 ![image-20210206214303795](README/image-20210206214303795.png) 
 
-### Add Submit Survey button
+### Add Submit Survey button with :rocket:withRouter:rocket: hepler
 
 
 
@@ -1406,7 +1451,7 @@ Refactor property name to keep server side and client side consistent
 
 <img src="README/image-20210206132530309.png" alt="image-20210206132530309" style="zoom:80%;" />  <img src="README/image-20210206132710109.png" alt="image-20210206132710109" style="zoom:80%;" /> 
 
-Posting to Surveys and Redirect on Submit by :rocket:withRouter:rocket: hepler
+Posting to Surveys and Redirect back to "/Surveys" on Submit by *withRoute* hepler
 
 <img src="README/image-20210205013636037.png" alt="image-20210205013636037" style="zoom: 67%;" /> 
 
@@ -1462,7 +1507,7 @@ After send a testing survey:
 
 
 
-![image-20210207010716893](README/image-20210207010716893.png) 
+<img src="README/image-20210207010716893.png" alt="image-20210207010716893" style="zoom:67%;" /> 
 
 To record actual feedback, we can define different href based on "yes", "no" button along with survey ID
 
@@ -1520,7 +1565,7 @@ select surveys of current user, excluding recipients
 
 ![image-20210207234454143](README/image-20210207234454143.png) 
 
-test: surveys are returned and 
+test: surveys are returned and recipients are not returned
 
 ![image-20210207235051282](README/image-20210207235051282.png) 
 

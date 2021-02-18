@@ -1,16 +1,19 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { fetchSurveys } from "../../actions";
+import { fetchSurveys, deleteSurvey } from "../../actions";
 
 import "../../css/styles.css";
 
 const SurveyList = (props) => {
+  // console.log();
   useEffect(() => {
     props.fetchSurveys();
-  }, [props]);
+  }, []);
 
   const renderSurveys = () => {
-    return props.surveys.reverse().map((survey) => {
+    // console.log("render surveys");
+
+    return props.surveys.map((survey) => {
       return (
         <div className="card darken-1" key={survey._id}>
           <div className="card-content">
@@ -23,6 +26,14 @@ const SurveyList = (props) => {
           <div className="card-action">
             <a>Yes: {survey.yes}</a>
             <a>no: {survey.no}</a>
+            <button
+              className="right btn-small ButtonDelete"
+              onClick={() => {
+                props.deleteSurvey(survey);
+              }}
+            >
+              Delete this Survey
+            </button>
           </div>
         </div>
       );
@@ -39,6 +50,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     fetchSurveys: () => dispatch(fetchSurveys()),
+    deleteSurvey: (survey) => dispatch(deleteSurvey(survey)),
   };
 };
 
