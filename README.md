@@ -1106,6 +1106,14 @@ when you make post requests to use Express Server, Express does not by default p
 
 ### Add Route-Specific Middleware to make sure users are logged in
 
+
+
+Express is a **routing and middleware web framework** that has minimal functionality of its own: An Express application is essentially a series of middleware function calls.
+
+- **Middleware** functions are functions that have access to the request object (***req***), the response object (***res***), and the ***next*** middleware function in the application’s request-response cycle. The next middleware function is commonly denoted by a variable named next.
+
+
+
 <img src="README/image-20210129002000490.png" alt="image-20210129002000490" style="zoom:80%;" /> 
 
 ![image-20210129010405406](README/image-20210129010405406.png) 
@@ -1602,3 +1610,9 @@ Component + dispatch:
 # Suggestion of Expanding the App 
 
 ![image-20210208004251706](README/image-20210208004251706.png) 
+
+
+
+# SurveyGo App Architecture
+
+![image-20210218233455370](README/image-20210218233455370.png)
