@@ -2,3 +2,5 @@ node_modules
 dev.js
 /client/.env.development
 /client/.eslintcache
+Notes.md
+/README
