@@ -26,6 +26,7 @@ const SurveyList = (props) => {
           <div className="card-action">
             <a>Yes: {survey.yes}</a>
             <a>no: {survey.no}</a>
+            <a>total: {survey.totalSent}</a>
             <button
               className="right btn-small ButtonDelete"
               onClick={() => {
