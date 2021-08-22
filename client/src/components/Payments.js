@@ -7,7 +7,7 @@ import "../css/styles.css";
 const Payments = (props) => {
   return (
     <StripeCheckout
-      name="Emaily"
+      name="SurveyGo"
       description="$5 for 5 email credits"
       amount={500}
       token={(token) => props.handleToken(token)}
