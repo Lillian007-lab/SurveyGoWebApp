@@ -2,7 +2,7 @@
 
 ## Project Structure
 
-![image-20210830001242191](README/image-20210830001242191.png) 
+![image-20210830001242191](ReadMeImg/image-20210830001242191.png) 
 
 ## Core Technology
 
@@ -17,11 +17,11 @@
 
 Users Collection:
 
-![image-20210830002534614](README/image-20210830002534614.png) 
+![image-20210830002534614](ReadMeImg/image-20210830002534614.png) 
 
 Surveys Collection:
 
-![image-20210830002701649](README/image-20210830002701649.png) 
+![image-20210830002701649](ReadMeImg/image-20210830002701649.png) 
 
 ## GUI 
 
