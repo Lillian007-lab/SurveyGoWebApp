@@ -23,7 +23,7 @@ Surveys Collection:
 
 ![image-20210830002701649](ReadMeImg/image-20210830002701649.png) 
 
-## GUI 
+## Demo
 
 ![image-20210830005013514](ReadMeImg/image-20210830005013514.png)
 
