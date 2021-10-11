@@ -1,5 +1,7 @@
 # SurveyGo Web Application
 
+SurveyGo is an web application helping users to email surveys to a cluster of recipients and review  tabular responses. It is deployed on Heroku https://surveygo-90754.herokuapp.com/surveys.
+
 ## Project Structure
 
 ![image-20210830001242191](ReadMeImg/image-20210830001242191.png) 
